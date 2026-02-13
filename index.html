@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be My Valentine ❤️</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="book">
+
+  <!-- PAGE 1 -->
+  <section class="page active">
+    <h1>Will you be my Valentine? ❤️</h1>
+    <div class="buttons">
+      <button class="yes" onclick="nextPage()">Yes 💖</button>
+      <button class="no" id="noBtn">No 😜</button>
+    </div>
+  </section>
+
+  <!-- PAGE 2 -->
+  <section class="page">
+    <div class="letter">
+      <p>
+        <!-- EDIT YOUR LETTER TEXT HERE -->
+        My love,<br><br>
+        Write your letter here...
+        <br><br>
+        Forever yours ❤️
+      </p>
+    </div>
+    <button class="next" onclick="nextPage()">Turn Page →</button>
+  </section>
+
+  <!-- PAGE 3 -->
+  <section class="page">
+    <h2>Our Memories 📸</h2>
+    <div class="heart">
+      <!-- REPLACE THESE IMAGES WITH YOUR 7 PHOTOS -->
+      <img src="assets/photos/1.jpg">
+      <img src="assets/photos/2.jpg">
+      <img src="assets/photos/3.jpg">
+      <img src="assets/photos/4.jpg">
+      <img src="assets/photos/5.jpg">
+      <img src="assets/photos/6.jpg">
+      <img src="assets/photos/7.jpg">
+    </div>
+    <button class="next" onclick="nextPage()">Turn Page →</button>
+  </section>
+
+  <!-- PAGE 4 -->
+  <section class="page">
+    <h2>Why I Love You 💐</h2>
+    <p class="ending">I love you ❤️</p>
+  </section>
+
+</div>
+
+<!-- BACKGROUND MUSIC (AUTO-PLAY AFTER FIRST TAP) -->
+<audio autoplay loop>
+  <source src="assets/music/love.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
